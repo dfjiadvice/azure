@@ -190,6 +190,9 @@
             "apiVersion": "2019-03-01",
             "name": "[parameters('virtualMachineName')]",
             "location": "[parameters('location')]",
+            "dependsOn": [
+  "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaceName'))]"
+            ],
           
             "properties": {
                 "hardwareProfile": {
