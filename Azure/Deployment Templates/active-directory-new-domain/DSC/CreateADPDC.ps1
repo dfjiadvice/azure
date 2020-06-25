@@ -89,7 +89,7 @@
             DatabasePath = "C:\Windows\NTDS"
             LogPath = "C:\Windows\NTDS"
             SysvolPath = "C:\Windows\SYSVOL"
-	        DependsOn = @("[xDisk]ADDataDisk", "[WindowsFeature]ADDSInstall")
+	        DependsOn = @("[WindowsFeature]ADDSInstall")
         } 
 
    }
