@@ -11,8 +11,8 @@
     "domainName": {
       "value": "corp.mydomain.com"
     },
-    "dnsPrefix": {
-      "value": "GEN-UNIQUE"
+    "netbiosName": {
+      "value": "netbiosname"
     }
   }
 }
