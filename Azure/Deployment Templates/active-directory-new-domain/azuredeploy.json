@@ -246,13 +246,14 @@
                         "settings": {
                             "ModulesUrl": "[uri(parameters('_artifactsLocation'), concat('DSC/CreateADPDC.zip', parameters('_artifactsLocationSasToken')))]",
                             "ConfigurationFunction": "CreateADPDC.ps1\\CreateADPDC",
-                            "Properties": {
+                            "ConfigurationArguments": {
                                 "DomainName": "[parameters('domainName')]",
+                                "DomainNetbiosName": "[parameters('netbiosName')]",
                                 "AdminCreds": {
                                     "UserName": "[parameters('adminUsername')]",
                                     "Password": "PrivateSettingsRef:AdminPassword"
-                                },
-                                "DomainNetbiosName": "[parameters('netbiosName')]"
+                                }
+                               
                             }
                         },
                         "protectedSettings": {
